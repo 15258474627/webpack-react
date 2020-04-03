@@ -2,9 +2,9 @@
 
 ```
 // 启动项目
-npm run server
+npm run serve
 // 打包项目
-npm run dev
+npm run build
 ```
 
 后续将持续补充、优化

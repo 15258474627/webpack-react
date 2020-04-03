@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 import _ from 'lodash';
 import './style/index.less';
 
 const obj = _.cloneDeep({})
 
-class App extends Component {
-    
-    render() {
-        return <div>
-            hello word`1235
+class App extends React.Component {
+    render(props) {
+      return (
+        <div>
+          Hello {this.props.name}
         </div>
+      );
     }
-}
-
-ReactDom.render(<App />, document.getElementById('app'));
+  }
+  
+  ReactDOM.render(
+    <App name="React" />,
+    document.getElementById('app')
+  );
